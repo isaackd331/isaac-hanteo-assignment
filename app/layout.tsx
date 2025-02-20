@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import MswProvider from "@/mocks/utils/MswProvider";
+import QueryProvider from "@/queries/QueryProvider";
 
 export const metadata: Metadata = {
   title: "isaac-hanteo-assignment",
@@ -16,8 +17,10 @@ export default function RootLayout({
     <html>
       <body>
         <MswProvider>
-          <main>{children}</main>
-          <div id="modal-portal"></div>
+          <QueryProvider>
+            <main>{children}</main>
+            <div id="modal-portal"></div>
+          </QueryProvider>
         </MswProvider>
       </body>
     </html>
