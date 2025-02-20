@@ -31,7 +31,8 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
+# 과제로 인해 특별한 키값 존재하지 않아 env 파일 repository 업로드
+# .env*
 
 # vercel
 .vercel
