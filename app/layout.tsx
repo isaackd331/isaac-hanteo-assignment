@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import "keen-slider/keen-slider.min.css";
 
 import MswProvider from "@/mocks/utils/MswProvider";
 import QueryProvider from "@/queries/QueryProvider";
+import Header from "@/components/header/Header";
 
 export const metadata: Metadata = {
   title: "isaac-hanteo-assignment",
@@ -18,6 +20,7 @@ export default function RootLayout({
       <body>
         <MswProvider>
           <QueryProvider>
+            <Header />
             <main>{children}</main>
             <div id="modal-portal"></div>
           </QueryProvider>
