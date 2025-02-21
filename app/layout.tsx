@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className="relative">
+      <body className="relative min-h-[100vh]">
         <MswProvider>
           <QueryProvider>
             <Header />
