@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "keen-slider/keen-slider.min.css";
+import "./globals.css";
 
 import MswProvider from "@/mocks/utils/MswProvider";
 import QueryProvider from "@/queries/QueryProvider";
