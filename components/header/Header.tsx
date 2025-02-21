@@ -22,8 +22,8 @@ const Header = () => {
   });
 
   return (
-    <nav className={classNames("w-full h-[3rem] bg-pink")}>
-      <div ref={sliderRef} className={classNames("keen-slider h-full")}>
+    <header className={classNames("w-full h-[3rem] bg-pink")}>
+      <nav ref={sliderRef} className={classNames("keen-slider h-full")}>
         {Nav.map((item, index) => {
           return (
             <div
@@ -43,8 +43,8 @@ const Header = () => {
             </div>
           );
         })}
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
