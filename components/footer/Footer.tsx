@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer
       className={classNames(
-        "flex justify-center items-center w-full h-[5rem] bg-gr-400 text-gr-900",
+        "fixed bottom-0 left-0 flex justify-center items-center w-full h-[5rem] bg-gr-400 text-gr-900",
       )}
     >
       최하단 푸터 영역

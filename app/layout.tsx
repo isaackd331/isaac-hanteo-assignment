@@ -19,11 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className="relative min-h-[100vh]">
+      <body className="flex flex-col min-h-screen">
         <MswProvider>
           <QueryProvider>
             <Header />
-            <main>{children}</main>
+            {/* Header height만큼 margin top을, Footer height만큼 margin bottom을 줌 */}
+            <main className="flex-1 overflow-auto mt-[3rem] mb-[5rem]">
+              {children}
+            </main>
             <Footer />
             <div id="modal-portal"></div>
           </QueryProvider>
