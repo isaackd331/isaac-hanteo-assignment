@@ -4,6 +4,7 @@ export const Nav: INav[] = [
   {
     name: "차트",
     value: "chart",
+    href: "/chart",
   },
   {
     name: "Whook",

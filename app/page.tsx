@@ -1,5 +1,7 @@
+import { redirect } from "next/navigation";
+
 const Index = () => {
-  return <>Index Page</>;
+  redirect("/chart");
 };
 
 export default Index;
