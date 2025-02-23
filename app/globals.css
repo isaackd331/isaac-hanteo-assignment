@@ -5,3 +5,8 @@
 html {
   font-size: 62.5%;
 }
+
+/* border */
+.border-gr-400-light {
+  @apply border-gr-400 border-solid border-[0.5rem];
+}
