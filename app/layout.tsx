@@ -24,7 +24,7 @@ export default function RootLayout({
           <QueryProvider>
             <Header />
             {/* Header height만큼 margin top을, Footer height만큼 margin bottom을 줌 */}
-            <main className="flex-1 overflow-auto mt-[3rem] mb-[5rem]">
+            <main className="flex-1 overflow-auto mt-[3rem] mb-[5rem] scrollbar-hide">
               {children}
             </main>
             <Footer />
