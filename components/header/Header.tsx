@@ -41,7 +41,7 @@ const Header = () => {
                 }
               }}
             >
-              {item.name}
+              {item.label}
             </div>
           );
         })}
