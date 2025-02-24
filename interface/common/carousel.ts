@@ -16,7 +16,7 @@ type EHrefType = (typeof EHrefType)[keyof typeof EHrefType];
  * @params @required endDttm - string : 종료 Dttm
  * @params @required href - string : 전송할 경로
  * @params @required hrefType - EHrefType : 전송할 경로 타입
- * @params imgPath - string : 이미지 경로
+ * @params @required imgPath - string : 이미지 경로
  * @params btnName - string : 바로가기 버튼 제목
  */
 export interface ICarouselItem {
@@ -24,7 +24,7 @@ export interface ICarouselItem {
   startDttm: string;
   endDttm: string;
   href: string;
-  hrefType: EHrefType;
-  imgPath?: string;
+  hrefType: keyof typeof EHrefType;
+  imgPath: string;
   btnName?: string;
 }
