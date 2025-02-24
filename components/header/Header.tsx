@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header
-      className={classNames("fixed top-0 left-0 w-full h-[3rem] bg-pink")}
+      className={classNames("fixed top-0 left-0 w-full h-[3rem] bg-pink z-[5]")}
     >
       <nav ref={sliderRef} className={classNames("keen-slider h-full")}>
         {Nav.map((item, index) => {

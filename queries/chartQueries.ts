@@ -37,9 +37,12 @@ export const useGetChartContents = () => {
       return res.data;
     },
     initialPageParam: 0,
-    getNextPageParam: (lastPages, pages): number | false => {
-      const nextPage = pages.length + 1;
-      return lastPages.length === 0 ? false : nextPage;
+    getNextPageParam: (lastPage, allPages) => {
+      const nextPage = allPages.length;
+
+      return lastPage?.length === 0 || lastPage?.length < 10
+        ? undefined
+        : nextPage;
     },
   });
 };
