@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 import Button from "../Button";
 
-import { EHrefType, ICarouselItem } from "@/interface/common/carousel";
+import { ICarouselItem } from "@/interface/common/carousel";
 
 /**
  * Carousel 단일 아이템 컴포넌트
@@ -41,15 +41,15 @@ const CarouselItem = ({
   };
 
   return (
-    <div
+    <section
       className={classNames(
-        "flex flex-col w-full rounded-[1rem] border-gr-400-light",
+        "flex flex-col w-full rounded-[1rem] border-gr-400-light gap-y-[1rem]",
       )}
     >
       {/* 이미지 영역 */}
       <div
         className={classNames(
-          "relative mb-[1rem] p-[1rem] overflow-hidden cursor-pointer",
+          "relative p-[1rem] overflow-hidden cursor-pointer",
         )}
         onClick={onClickHandler}
       >
@@ -66,7 +66,34 @@ const CarouselItem = ({
         {/* 이미지 */}
         <Image src={imgPath} alt={`캐로셀-${title}-${imgPath}`} fill />
       </div>
-    </div>
+
+      {/* 정보 영역 */}
+      <article className={classNames("flex flex-col p-[1rem] gap-y-[1rem]")}>
+        <div className={classNames("flex justify-between items-center")}>
+          <span
+            className={classNames(
+              "max-w-[50%] font-[600] text-[1.6rem] text-gr-900 truncate",
+            )}
+          >
+            {title}
+          </span>
+
+          <Button
+            disabled
+            label={btnName ? btnName : "바로가기"}
+            size="fit"
+            variant="prOutlined"
+            round="circle"
+          />
+        </div>
+
+        <div className={classNames("flex justify-end")}>
+          <span className={classNames("font-[400] text-[1rem] text-gr-900")}>
+            {`${startDttm} ~ ${endDttm} (KST)`}
+          </span>
+        </div>
+      </article>
+    </section>
   );
 };
 
