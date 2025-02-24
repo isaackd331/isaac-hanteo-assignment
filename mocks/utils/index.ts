@@ -11,6 +11,6 @@ export const initMsw = async () => {
   // CSR 환경 구축
   else {
     const { browser } = await import("./browser");
-    browser.start();
+    await browser.start();
   }
 };

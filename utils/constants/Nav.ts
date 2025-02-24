@@ -2,28 +2,33 @@ import { INav } from "@/interface/header/interface";
 
 export const Nav: INav[] = [
   {
-    name: "차트",
+    label: "차트",
     value: "chart",
     href: "/chart",
   },
   {
-    name: "Whook",
+    label: "Whook",
     value: "whook",
+    href: "/whook",
   },
   {
-    name: "이벤트",
+    label: "이벤트",
     value: "event",
+    href: "/event",
   },
   {
-    name: "뉴스",
+    label: "뉴스",
     value: "news",
+    href: "/news",
   },
   {
-    name: "스토어",
+    label: "스토어",
     value: "store",
+    href: "/store",
   },
   {
-    name: "충전소",
+    label: "충전소",
     value: "charge",
+    href: "/charge",
   },
 ];
