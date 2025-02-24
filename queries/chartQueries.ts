@@ -5,7 +5,7 @@ import chartService from "@/services/chartService";
 /**
  * 차트 캐로셀 데이터 쿼리
  */
-export const getChartCarouselItemsQuery = () => {
+export const useGetChartCarouselItems = () => {
   return useQuery({
     queryKey: ["getChartCarouselItems"],
     queryFn: async () => {

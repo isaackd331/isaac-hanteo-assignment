@@ -52,10 +52,10 @@ const CAROUSEL_MOCK_DATA: ICarouselItem[] = [
 /**
  * 차트 페이지 캐로셀 데이터 GET
  */
-const getChartCarouselItems = () => {
-  return http.get("/chart/carousel", () => {
-    return HttpResponse.json(CAROUSEL_MOCK_DATA);
+const getChartCarouselItems = http.get("/chart/carousel", () => {
+  return HttpResponse.json(CAROUSEL_MOCK_DATA, {
+    status: 200,
   });
-};
+});
 
 export const chartMockApis = [getChartCarouselItems];

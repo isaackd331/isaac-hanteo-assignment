@@ -1,4 +1,4 @@
-import { chartMockApis } from "../chart";
+import { chartMockApis } from "../__mocks__/chart";
 
 /**
  * Mock API Root Handler
