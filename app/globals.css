@@ -8,5 +8,9 @@ html {
 
 /* border */
 .border-gr-400-light {
-  @apply border-gr-400 border-solid border-[0.5rem];
+  @apply border-gr-400 border-solid border-[0.05rem];
+}
+
+.border-pr {
+  @apply border-pink border-solid border-[0.1rem];
 }

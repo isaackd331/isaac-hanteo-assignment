@@ -15,7 +15,12 @@ const Button = ({ label, size, variant, round, ...props }: IButton) => {
     <button
       disabled={props.disabled}
       onClick={props.onClick}
-      className={classNames(ESize[size], EVariant[variant], ERound[round])}
+      className={classNames(
+        ESize[size],
+        EVariant[variant],
+        ERound[round],
+        props.className,
+      )}
     >
       {label}
     </button>

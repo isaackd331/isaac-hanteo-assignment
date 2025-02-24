@@ -5,9 +5,9 @@ import Carousel from "@/components/common/carousel/Carousel";
 import { useGetChartCarouselItems } from "@/queries/chartQueries";
 
 const Chart = () => {
-  const { isLoading, isFetched } = useGetChartCarouselItems();
+  const { isLoading, data } = useGetChartCarouselItems();
 
-  return <div>헬로</div>;
+  return isLoading ? <></> : <Carousel items={data ? data : []} />;
 };
 
 export default Chart;

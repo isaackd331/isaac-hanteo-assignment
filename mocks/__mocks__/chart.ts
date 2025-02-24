@@ -12,7 +12,7 @@ const CAROUSEL_MOCK_DATA: ICarouselItem[] = [
     endDttm: "2025-03-10 10:00",
     href: "/chart/1",
     hrefType: "inner",
-    imgPath: "aurora1.webp",
+    imgPath: "/aurora1.webp",
   },
   {
     title: "테스트2-진행중-외부경로",
@@ -20,7 +20,7 @@ const CAROUSEL_MOCK_DATA: ICarouselItem[] = [
     endDttm: "2025-03-10 10:00",
     href: "https://www.naver.com",
     hrefType: "outer",
-    imgPath: "aurora2.webp",
+    imgPath: "/aurora2.webp",
   },
   {
     title: "테스트3-종료-내부경로",
@@ -28,7 +28,7 @@ const CAROUSEL_MOCK_DATA: ICarouselItem[] = [
     endDttm: "2025-02-23 10:00",
     href: "/chart/1",
     hrefType: "inner",
-    imgPath: "aurora1.webp",
+    imgPath: "/aurora1.webp",
   },
   {
     title: "테스트4-종료-외부경로",
@@ -36,7 +36,7 @@ const CAROUSEL_MOCK_DATA: ICarouselItem[] = [
     endDttm: "2025-02-23 10:00",
     href: "https://www.naver.com",
     hrefType: "outer",
-    imgPath: "aurora2.webp",
+    imgPath: "/aurora2.webp",
   },
   {
     title:
@@ -45,7 +45,7 @@ const CAROUSEL_MOCK_DATA: ICarouselItem[] = [
     endDttm: "2025-03-10 10:00",
     href: "/chart/1",
     hrefType: "inner",
-    imgPath: "aurora3.webp",
+    imgPath: "/aurora3.webp",
   },
 ];
 

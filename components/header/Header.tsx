@@ -32,7 +32,9 @@ const Header = () => {
               className={classNames(
                 "keen-slider__slide flex justify-center items-center font-bold text-[1.2rem] cursor-pointer",
                 // 현재 path와 메뉴의 href가 동일할 경우 selected 효과
-                pathname === item.href ? "text-gr-50" : "text-gr-900",
+                pathname.includes(`${item.href}`)
+                  ? "text-gr-50"
+                  : "text-gr-900",
               )}
               key={`header-nav-${index}-${item.value}`}
               onClick={() => {

@@ -43,14 +43,12 @@ const CarouselItem = ({
   return (
     <section
       className={classNames(
-        "flex flex-col w-full rounded-[1rem] border-gr-400-light gap-y-[1rem]",
+        "flex flex-col w-full rounded-[1rem] border-gr-400-light gap-y-[0.3rem] overflow-hidden",
       )}
     >
       {/* 이미지 영역 */}
       <div
-        className={classNames(
-          "relative p-[1rem] overflow-hidden cursor-pointer",
-        )}
+        className={classNames("relative min-h-[15rem] p-[1rem] cursor-pointer")}
         onClick={onClickHandler}
       >
         {/* isOn Bool에 따른 진행중/종료 조건부 렌더링 */}
@@ -60,7 +58,7 @@ const CarouselItem = ({
           size="fit"
           variant={isOn ? "prFill" : "grayDisabled"}
           round="square"
-          className={classNames("absolute top-[1rem] left-[1rem] z-[2]")}
+          className={classNames("absolute top-[1rem] left-[1rem] z-[1]")}
         />
 
         {/* 이미지 */}
@@ -72,7 +70,7 @@ const CarouselItem = ({
         <div className={classNames("flex justify-between items-center")}>
           <span
             className={classNames(
-              "max-w-[50%] font-[600] text-[1.6rem] text-gr-900 truncate",
+              "max-w-[70%] font-[600] text-[1.6rem] text-gr-900 truncate",
             )}
           >
             {title}
